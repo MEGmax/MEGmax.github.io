@@ -1,7 +1,9 @@
-# Matthew's Personal Portfolio ⚡️ 
+# Matthew's Personal Portfolio 
 
 > https://Megmax.github.io
-
+> 
+> This repository is based on a clone of [Varad Bhogayata's portfolio template](https://github.com/varadbhogayata/varadbhogayata.github.io).  
+All credit for the original design and structure goes to the creator. My contributions are in customizing the content.
 ### Website Preview
 <p align="center"> 
   <kbd>
@@ -12,7 +14,6 @@
 
 ## Sections 📚
 ✔️ About me\
-A skilled and hardworking Computer Engineering Student at the University of Toronto
 ✔️ Experience\
 ✔️ Projects \
 ✔️ Skills \
