@@ -40,14 +40,21 @@ This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE)
 ## ECE444 Lab 1
 
 ### Activity 1- Cloning personal website repo into your own GitHub account.
-![Cloning personal website repo into your own GitHub account.](/assets/ECE444/Activity1.png)
+![Cloning personal website repo](/assets/ECE444/Activity1.png)
 
 ### Activity 2- Adding your personal information.
+![Adding personal information](/assets/ECE444/Activity2_site.png)
+![Adding personal information](/assets/ECE444/Activity2_repo.png)
 
 ### Activity 3- Changing the Theme Color of Your Personal Website.
+![Adding personal information](/assets/ECE444/Activity3.png)
+![Adding personal information](/assets/ECE444/Activity2_repo.png)
 
 ### Activity 4- Creating new section and embedding Google Maps
+![Adding personal information](/assets/ECE444/Activity4.png)
+![Adding personal information](/assets/ECE444/Activity2_repo.png)
 
 ### Activity 5- Adding Dynamic Content with JavaScript.
+![Adding personal information](/assets/ECE444/Activity5_site.png)
 
 
