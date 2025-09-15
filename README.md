@@ -37,3 +37,17 @@ To view a live example, **[click here](https://varadbhogayata.github.io/)**
 ## License 📄
 This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE) file for details.
 
+## ECE444 Lab 1
+
+### Activity 1- Cloning personal website repo into your own GitHub account.
+![Cloning personal website repo into your own GitHub account.](/assets/ECE444/Activity1.png)
+
+### Activity 2- Adding your personal information.
+
+### Activity 3- Changing the Theme Color of Your Personal Website.
+
+### Activity 4- Creating new section and embedding Google Maps
+
+### Activity 5- Adding Dynamic Content with JavaScript.
+
+
