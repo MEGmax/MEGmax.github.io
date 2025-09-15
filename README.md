@@ -7,7 +7,7 @@ All credit for the original design and structure goes to the creator. My contrib
 ### Website Preview
 <p align="center"> 
   <kbd>
-    <a href="https://MEGmax.github.io" target="_blank"><img src="examples/preview.gif">
+    <a href="https://MEGmax.github.io" target="_blank"><img src="/assets/ECE444/website_preview.gif">
   </a>
   </kbd>
 </p>
@@ -36,3 +36,4 @@ To view a live example, **[click here](https://varadbhogayata.github.io/)**
 
 ## License 📄
 This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE) file for details.
+
