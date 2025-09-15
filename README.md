@@ -55,6 +55,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE)
 ![Adding personal information](/assets/ECE444/Activity2_repo.png)
 
 ### Activity 5- Adding Dynamic Content with JavaScript.
-![Adding personal information](/assets/ECE444/Activity5_site.png)
+![Adding personal information](/assets/ECE444/Activity5.png)
 
 
