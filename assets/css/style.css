@@ -721,3 +721,119 @@ small {
     background-position-x: 30%;
   }
 }
+/* ---- Content refresh additions (no new fonts or colours) ---- */
+
+/* Experience: neutral logo placeholder until real company logos are added */
+.exp-logo-placeholder {
+  display: block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #e0f2f1;
+  color: #008073;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+#experience .card .card-content p.exp-team {
+  color: #666;
+  font-size: 15px;
+  margin: 0;
+  padding: 0 3px;
+}
+
+/* Company without a confirmed website: match the look of linked ones (Materialize's ".card a") */
+#experience .exp-nolink {
+  display: block;
+  margin-right: 20px;
+}
+
+#experience .exp-nolink-title {
+  text-transform: uppercase;
+  padding: 3px 3px 0 3px;
+}
+
+/* Projects: screenshots/placeholders fill the frame without stretching */
+#projects .card-image img {
+  object-fit: cover;
+}
+
+/* Skills: equal-height rows so tiles never snag on a taller neighbour */
+#skills .row.text-center {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#skills .col img.skill-icon {
+  width: 72px;
+  height: 72px;
+  margin: 14px auto 14px;
+  padding: 0;
+  display: block;
+}
+
+#skills .skill-placeholder {
+  display: block;
+  width: 72px;
+  height: 72px;
+  line-height: 72px;
+  margin: 14px auto 14px;
+  border-radius: 50%;
+  background-color: #eceff1;
+  color: #607d8b;
+  font-size: 36px;
+}
+
+/* Contact: non-link row (location) aligned like the link rows */
+#contact .contact-icon {
+  cursor: default;
+}
+
+#contact .contact-text {
+  bottom: 6px;
+  left: 20px;
+  position: relative;
+  padding: 3px 3px 0 3px;
+}
+
+/* Recent Projects (GitHub) cards */
+#recent-projects .repo-title {
+  overflow-wrap: anywhere;
+  line-height: 1.3;
+}
+
+/* Materialize fixes .card.small content at 150px (it expects an image); these cards have none */
+#recent-projects .card.small .card-content {
+  height: calc(100% - 70px);
+}
+
+#recent-projects .card .card-content p.repo-meta {
+  color: #666;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  /* the template's "padding: 0" reset above squashes the hero buttons on phones */
+  #intro.section .container .buttons a {
+    padding: 9px 22px;
+  }
+
+  #experience .card .card-content p.exp-team {
+    text-align: center;
+  }
+
+  #contact .contact-text {
+    text-align: center;
+    display: block;
+    left: initial;
+    bottom: initial;
+  }
+
+  #contact .btn-floating.btn-large.contact-icon {
+    display: block;
+    margin: 0 auto;
+  }
+}
