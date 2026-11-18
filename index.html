@@ -1,807 +1,168 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Matthew Grech | Software Engineer</title>
+    <link rel="canonical" href="https://megmax.github.io/" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- TODO: add your own analytics / Search Console verification tags here if you want them
+         (the template's tags pointed at someone else's accounts and were removed). -->
 
-  <!-- Materialize - Compiled and minified CSS-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
-  <!-- Font Awesome Icon - CSS-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-  <!-- Custom Styles-->
-  <link rel="stylesheet" href="/assets/css/style.css" />
-  <title>Matthew Grech | Software Engineer</title>
-  <link rel="canonical" href="https://megmax.github.io/" />
+    <meta name="author" content="Matthew Grech" />
+    <meta
+      name="description"
+      content="Matthew Grech: Software Engineer | UofT CompE '26, based in Toronto, Canada. Experience, projects, skills and contact details."
+    />
 
-  <!-- TODO: add your own analytics / Search Console verification tags here if you want them
-       (the template's tags pointed at someone else's accounts and were removed). -->
+    <!-- Open Graph -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Matthew Grech | Software Engineer" />
+    <meta property="og:description" content="Software Engineer | UofT CompE '26 · Toronto, Canada" />
+    <meta property="og:url" content="https://megmax.github.io/" />
+    <meta property="og:site_name" content="Matthew Grech" />
+    <meta property="og:image" content="https://megmax.github.io/assets/img/og-preview.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Preview of Matthew Grech's personal website" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Matthew Grech | Software Engineer" />
+    <meta name="twitter:description" content="Software Engineer | UofT CompE '26 · Toronto, Canada" />
+    <meta name="twitter:image" content="https://megmax.github.io/assets/img/og-preview.png" />
+    <meta name="twitter:image:alt" content="Preview of Matthew Grech's personal website" />
 
-  <meta name="author" content="Matthew Grech" />
-  <meta name="description"
-    content="Matthew Grech: Software Engineer | UofT CompE '26, based in Toronto, Canada. Experience, projects, skills and contact details." />
-  <!-- Open Graph-->
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Matthew Grech | Software Engineer" />
-  <meta property="og:description" content="Software Engineer | UofT CompE '26 · Toronto, Canada" />
-  <meta property="og:url" content="https://megmax.github.io/" />
-  <meta property="og:site_name" content="Matthew Grech" />
-  <meta property="og:image" content="https://megmax.github.io/assets/img/og-preview.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Preview of Matthew Grech's personal website" />
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Matthew Grech | Software Engineer" />
-  <meta name="twitter:description" content="Software Engineer | UofT CompE '26 · Toronto, Canada" />
-  <meta name="twitter:image" content="https://megmax.github.io/assets/img/og-preview.png" />
-  <meta name="twitter:image:alt" content="Preview of Matthew Grech's personal website" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/assets/img/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="%PALETTE_BASE%" />
+    <meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="%PALETTE_BASE%" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="robots" content="index, follow" />
 
-  <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png" />
-  <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-icon-72x72.png" />
-  <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-icon-76x76.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-icon-114x114.png" />
-  <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-icon-120x120.png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-icon-144x144.png" />
-  <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon/apple-icon-152x152.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-icon-180x180.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-icon-192x192.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96x96.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="/assets/img/favicon/manifest.json" />
-  <meta name="msapplication-TileColor" content="#ffffff" />
-  <meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png" />
-  <meta name="theme-color" content="#ffffff" />
-  <meta name="robots" content="index, follow" />
-</head>
+    <link rel="preload" href="/fonts/geist.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/geist-mono.woff2" as="font" type="font/woff2" crossorigin />
+    <!-- palette -->
+    <script>
+      document.documentElement.classList.replace('no-js', 'js');
+    </script>
+    <link rel="stylesheet" href="/src/styles/main.css" />
+    <script type="module" src="/src/main.ts"></script>
+  </head>
 
-<body>
-  <!-- Navigation Menu-->
-  <!-- Nav class 1 -->
-  <nav class="hide-on-small-only">
-    <ul class="side-nav fixed section table-of-contents">
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-      <li class="logo">
-        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
-          class="brand-logo grey-blue-text">
-          <img src="/assets/img/LinkedIn_Profile_Photo.jpeg" class="circle img-responsive profile-pic"
-            alt="Matthew Grech">
-        </a>
-      </li>
+    <!-- Background: CSS gradient first (no-WebGL / reduced-motion fallback), WebGL canvas fades in on top. -->
+    <div class="bg-fallback" aria-hidden="true"></div>
+    <canvas id="scene" class="scene" aria-hidden="true"></canvas>
 
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-      <li class="bold">
-        <!-- TODO: add your own Google Drive copy of the resume here if you want one
-             (the old Drive link pointed at the template author's resume and was removed). -->
-        <a aria-label="Open Matthew's resume (PDF) in a new tab" href="/assets/resume/Matthew_Grech_Resume.pdf"
-          target="_blank" rel="noopener" class="waves-effect waves-dark teal-text"><i
-            class="mdi-file-folder-open small"></i><span>Resume</span></a>
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Nav class 2 -->
-  <nav class="hide-on-large only trigger z-depth-1">
-    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
-      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-    <!-- Mobile nav -->
-    <div class="name-title">
-      <a id="name" href="#" class="teal-text">Matthew Grech</a><span class="black-text">Software Engineer</span>
-    </div>
-  </nav>
-
-  <!-- Nav class 3 -->
-  <nav class="hide-on-large only">
-    <ul id="slide-out" class="side-nav">
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-      <li class="bold">
-        <!-- TODO: add your own Google Drive copy of the resume here if you want one (see desktop nav note). -->
-        <a aria-label="Open Matthew's resume (PDF) in a new tab" href="/assets/resume/Matthew_Grech_Resume.pdf"
-          target="_blank" rel="noopener" class="waves-effect waves-dark teal-text"><i
-            class="mdi-file-folder-open small"></i><span>Resume</span></a>
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Main Content-->
-  <main>
-    <!-- First Section: Heading lines and image -->
-    <section id="intro" class="section scrollspy full-height">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="col-md-9">
-          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
-            <div class="caption">
-              <h2>Hi, I'm <span class="teal">Matthew Grech.</span></h2>
-              <h5 style="color:#fff"><span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
-              <h5>Software Engineer | UofT CompE &rsquo;26</h5>
-            </div>
-            <div class="social">
-              <a href="https://www.linkedin.com/in/mattgrech0" target="_blank" rel="noopener"
-                aria-label="Matthew Grech on LinkedIn">
-                <button class="icon-btn linkedin" tabindex="-1">
-                  <i class="fa fa-linkedin"></i>
-                </button>
-              </a>
-              <a href="https://github.com/MEGmax" target="_blank" rel="noopener" aria-label="Matthew Grech on GitHub">
-                <button class="icon-btn github" tabindex="-1">
-                  <i class="fa fa-github"></i>
-                </button>
-              </a>
-            </div>
-            <div class='buttons'>
-              <a href="#about" class="readme">Read More</a>
-              <a href="#contact" class="contactme">Contact Me</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Second Section: About -->
-    <section id="about" class="section scrollspy">
-      <h3 class="page-title white-text teal">About</h3>
-      <div class="container flow-text">
-        <p>
-          I am a Software Engineer and Computer Engineering student at the University of Toronto (BASc 2026),
-          based in Toronto, Canada.
-          My work spans full-stack web development, DevOps pipelines, and deep learning.
-          I enjoy building scalable applications, solving complex algorithmic challenges, and collaborating in teams to
-          deliver impactful solutions.
-        </p>
-        <!-- Keep this list in sync with the Skills section below. -->
-        <ul>
-          <li><b>Languages:</b> Python, C/C++, TypeScript/JavaScript, C#, Java, SQL (T-SQL, PostgreSQL), Ruby</li>
-          <li><b>Frameworks:</b> React, Next.js, Node.js, ASP.NET / .NET, Ruby on Rails</li>
-          <li><b>Platforms &amp; tools:</b> Power Apps, Power Automate, SharePoint, Azure, Git, GitHub Actions</li>
-          <li><b>ML / data:</b> PyTorch, NumPy, Pandas, scikit-learn</li>
+    <header class="nav" data-nav>
+      <nav class="nav-pill glass" aria-label="Primary">
+        <a class="nav-brand" href="#intro" aria-label="Matthew Grech, back to top">MG</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav-toggle-label">Menu</span>
+          <span class="nav-toggle-icon" aria-hidden="true"><i></i><i></i></span>
+        </button>
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#recent-projects">Recent</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="nav-links-resume">
+            <!-- TODO: add your own Google Drive copy of the resume here if you want one
+                 (the old Drive link pointed at the template author's resume and was removed). -->
+            <a
+              class="nav-resume"
+              href="/assets/resume/Matthew_Grech_Resume.pdf"
+              target="_blank"
+              rel="noopener"
+              aria-label="Open Matthew's resume (PDF) in a new tab"
+              >Resume</a
+            >
+          </li>
         </ul>
-      </div>
-    </section>
+        <span class="nav-progress" aria-hidden="true"></span>
+      </nav>
+    </header>
 
-    <!-- Third Section: Experience -->
-    <section id="experience" class="section scrollspy">
-      <h3 class="page-title white-text teal">Experience</h3>
-      <div class="container">
-        <!-- Company logos are neutral placeholders. TODO: drop in real logos if you want them. -->
-
-        <!-- CIBC Capital Markets (current) -->
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://www.cibccm.com/" target="_blank" rel="noopener"
-                  aria-label="CIBC Capital Markets website"><span class="exp-logo-placeholder"
-                    aria-hidden="true">CIBC</span></a>
-              </div>
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="https://www.cibccm.com/" target="_blank" rel="noopener"
-                      class="teal-text hoverline">CIBC Capital Markets</a></span>
-                </p>
-                <p class="exp-team">Client Data and Process Automation</p>
-              </div>
-            </div>
-            <div class="role brown-text text-darken-2">Analyst</div>
-            <ul>
-              <li>Created an attestation platform with delegation-aware Power Fx logic and audit-trail permission
-                controls, automating compliance sign-off for 100+ stakeholders.</li>
-              <li>Automated tracking of 20,000+ annual client communications by engineering scalable Power Automate
-                workflows, reducing manual processing overhead.</li>
-              <li><b>Stack:</b> Power Apps (Canvas), Power Automate, SharePoint, Power Fx</li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <!-- TODO: add CIBC start date, e.g. "<Month YYYY> – Present | Toronto, Canada" -->
-            <span>Current role | Toronto, Canada</span>
-          </div>
-        </div>
-
-        <!-- Nuclear Promise X -->
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://www.npxinnovation.ca/" target="_blank" rel="noopener"
-                  aria-label="Nuclear Promise X website"><span class="exp-logo-placeholder"
-                    aria-hidden="true">NPX</span></a>
-              </div>
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="https://www.npxinnovation.ca/" target="_blank" rel="noopener"
-                      class="teal-text hoverline">Nuclear Promise X (NPX)</a></span>
-                </p>
-                <p class="exp-team">PEY co-op</p>
-              </div>
-            </div>
-            <div class="role brown-text text-darken-2">Software Engineering Intern</div>
-            <ul>
-              <li>Built React + Next.js QA web app projected to save $200K over 4 years, deployed to Azure Container
-                Apps.</li>
-              <li>Created invoice manager automating 80% of invoicing process.</li>
-              <li>Improved routing logic in ECHO tool, boosting efficiency by 6%.</li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span>May 2024 &ndash; May 2025</span>
+    <main id="main" tabindex="-1">
+      <section id="intro" class="hero" tabindex="-1" aria-labelledby="hero-name">
+        <div class="hero-inner">
+          <p class="hero-kicker">Hi, I'm</p>
+          <h1 id="hero-name" class="hero-name">Matthew Grech</h1>
+          <p class="hero-role">Software Engineer <span class="hero-sep">|</span> UofT CompE &rsquo;26</p>
+          <div class="hero-actions">
+            <a
+              class="btn btn-glass"
+              href="https://www.linkedin.com/in/mattgrech0"
+              target="_blank"
+              rel="noopener"
+              aria-label="Matthew Grech on LinkedIn"
+            >
+              <svg class="icon" viewBox="0 0 128 128" aria-hidden="true" focusable="false">
+                <path
+                  fill="currentColor"
+                  d="M116 3H12a8.91 8.91 0 00-9 8.8v104.42a8.91 8.91 0 009 8.78h104a8.93 8.93 0 009-8.81V11.77A8.93 8.93 0 00116 3zM39.17 107H21.06V48.73h18.11zm-9-66.21a10.5 10.5 0 1110.49-10.5 10.5 10.5 0 01-10.54 10.48zM107 107H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53V48.73h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75z"
+                />
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+            <a
+              class="btn btn-glass"
+              href="https://github.com/MEGmax"
+              target="_blank"
+              rel="noopener"
+              aria-label="Matthew Grech on GitHub"
+            >
+              <svg class="icon" viewBox="0 0 128 128" aria-hidden="true" focusable="false">
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z"
+                />
+              </svg>
+              <span>GitHub</span>
+            </a>
           </div>
         </div>
+        <a class="scroll-cue" href="#about">
+          <span class="scroll-cue-label">Scroll</span>
+          <span class="scroll-cue-line" aria-hidden="true"></span>
+        </a>
+      </section>
 
-        <!-- Ramuri Science Inc. -->
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <span class="exp-nolink"><span class="exp-logo-placeholder" aria-hidden="true">R</span></span>
-              </div>
-              <div class="col s12 m10">
-                <!-- TODO: link Ramuri Science Inc.'s website if it has one. I couldn't confirm a company site
-                     (ramuri.com serves a blank page), so the company name is not linked. -->
-                <p>
-                  <span class="card-title"><span class="teal-text exp-nolink-title">Ramuri Science Inc.</span></span>
-                </p>
-              </div>
-            </div>
-            <div class="role brown-text text-darken-2">Director of Engineering</div>
-            <ul>
-              <li>Led early-stage startup engineering team, securing Microsoft + UofT funding.</li>
-              <li>Developed CNN-based product recommendation model, boosting users by 82%.</li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span>May 2023 &ndash; May 2024</span>
-          </div>
-        </div>
-
-        <!-- Questica Inc. (questica.com now redirects to its parent company, Euna Solutions) -->
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://www.questica.com/" target="_blank" rel="noopener" aria-label="Questica website"><span
-                    class="exp-logo-placeholder" aria-hidden="true">Q</span></a>
-              </div>
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="https://www.questica.com/" target="_blank" rel="noopener"
-                      class="teal-text hoverline">Questica Inc.</a></span>
-                </p>
-              </div>
-            </div>
-            <div class="role brown-text text-darken-2">Software Engineering Intern</div>
-            <ul>
-              <li>Built integration dashboard with .NET 6 + C#, reducing data manipulation times by 50%.</li>
-              <li>Optimized reporting with T-SQL scripts, cutting build times by 40%.</li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span>May 2022 &ndash; Aug 2022</span>
-          </div>
-        </div>
-
-        <!-- Youthfully -->
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://www.youthfully.com/" target="_blank" rel="noopener"
-                  aria-label="Youthfully website"><span class="exp-logo-placeholder" aria-hidden="true">Y</span></a>
-              </div>
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="https://www.youthfully.com/" target="_blank" rel="noopener"
-                      class="teal-text hoverline">Youthfully</a></span>
-                </p>
-              </div>
-            </div>
-            <div class="role brown-text text-darken-2">Coach</div>
-            <!-- TODO: add a 1-2 line description of the coaching work as <ul><li>...</li></ul> -->
-          </div>
-          <div class="card-action">
-            <!-- TODO: add Youthfully dates, e.g. "<Month YYYY> – <Month YYYY>" -->
-            <span>Mentoring</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Fourth Section: Projects -->
-    <section id="projects" class="section scrollspy">
-      <h3 class="page-title white-text teal">Projects</h3>
-      <div class="container">
-        <div class="row">
-
-          <!-- Credit Card Chooser -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <!-- TODO: replace the placeholder with a real screenshot -->
-                <img alt="Credit Card Chooser (placeholder image)" src="/assets/img/project-placeholder.svg"
-                  style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title teal-text hoverline">Credit Card Chooser</span>
-                <p>Rails backend for a Canadian credit card recommender.</p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> Ruby on Rails, SQLite</li>
-                  <li>Users upload their spending.</li>
-                  <li>Transactions are categorized.</li>
-                  <li>Cards are recommended based on the user's spending profile.</li>
-                </ul>
-                <!-- TODO: the matching repo is private, so there is no source link.
-                     Make it public or add a live URL, then add the buttons back. -->
-              </div>
-            </div>
-          </div>
-
-          <!-- Mario Kart Cup Nights -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of the Kart Night League website" src="/assets/img/project-kart-league.jpg"
-                  style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title teal-text hoverline">Mario Kart Cup Nights</span>
-                <p>Website for organizing Mario Kart cup nights.</p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> React, MUI, Vite, Supabase, GitHub Actions, GitHub Pages</li>
-                  <li>Admins schedule cup nights; players RSVP and can opt in to email invites.</li>
-                  <li>Tracks race results and season standings.</li>
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit the Mario Kart Cup Nights website" href="https://megmax.github.io/kart-league/"
-                    target="_blank" rel="noopener" data-position="top" data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for Mario Kart Cup Nights"
-                    href="https://github.com/MEGmax/kart-league" target="_blank" rel="noopener" data-position="top"
-                    data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- VWAP + RSI Backtest -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <!-- TODO: replace the placeholder with a real screenshot (e.g. an equity curve) -->
-                <img alt="VWAP + RSI Backtest (placeholder image)" src="/assets/img/project-placeholder.svg"
-                  style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title teal-text hoverline">VWAP + RSI Backtest</span>
-                <p>Python backtest of an intraday mean-reversion trading strategy using VWAP and RSI signals.</p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> Python</li>
-                  <li>Intraday mean-reversion strategy driven by VWAP and RSI signals.</li>
-                </ul>
-                <!-- TODO: no matching repo found on github.com/MEGmax (public or private). Add the repo link
-                     once it exists. -->
-              </div>
-            </div>
-          </div>
-
-          <!-- Graphical Information System -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <!-- TODO: replace the placeholder with a real screenshot -->
-                <img alt="Graphical Information System (placeholder image)" src="/assets/img/project-placeholder.svg"
-                  style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title teal-text hoverline">Graphical Information System</span>
-                <p>C++ Google Maps-style mapping app with Dijkstra and A* path-finding.</p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> C++</li>
-                  <li>Path-finding with Dijkstra and A*.</li>
-                  <!-- VERIFY: ranking claim carried over from the old site. -->
-                  <li>Ranked 2nd of 100+ teams in a path-finding efficiency challenge.</li>
-                </ul>
-                <!-- TODO: the matching repo is private, so there is no source link. -->
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Fifth Section: Skills (keep in sync with the list in About) -->
-    <!-- Logos: Devicon (MIT), self-hosted in /assets/img/skills/. Power Platform items use neutral icons. -->
-    <section id="skills" class="section scrollspy">
-      <h3 class="page-title white-text teal">Skills</h3>
-      <div class="container">
-
-        <!-- Languages -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Languages</h4>
-            <div class="row text-center">
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/skills/python-original.svg" class="responsive-img skill-icon" width="72"
-                  height="72" />Python
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/skills/cplusplus-original.svg" class="responsive-img skill-icon"
-                  width="72" height="72" />C/C++
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/skills/typescript-original.svg" class="responsive-img skill-icon"
-                  width="72" height="72" />TypeScript/<wbr>JavaScript
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/skills/csharp-original.svg" class="responsive-img skill-icon" width="72"
-                  height="72" />C#
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/skills/java-original.svg" class="responsive-img skill-icon" width="72"
-                  height="72" />Java
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/skills/postgresql-original.svg" class="responsive-img skill-icon"
-                  width="72" height="72" />SQL (T-SQL, PostgreSQL)
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/skills/ruby-original.svg" class="responsive-img skill-icon" width="72"
-                  height="72" />Ruby
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Frameworks -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Frameworks</h4>
-            <div class="row text-center">
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/skills/react-original.svg" class="responsive-img skill-icon" width="72"
-                  height="72" />React
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/skills/nextjs-original.svg" class="responsive-img skill-icon" width="72"
-                  height="72" />Next.js
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/skills/nodejs-original.svg" class="responsive-img skill-icon" width="72"
-                  height="72" />Node.js
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/skills/dot-net-original.svg" class="responsive-img skill-icon" width="72"
-                  height="72" />ASP.NET / .NET
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/skills/rails-plain.svg" class="responsive-img skill-icon" width="72"
-                  height="72" />Ruby on Rails
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Platforms & tools -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Platforms &amp; Tools</h4>
-            <div class="row text-center">
-              <div class="col s4 m2">
-                <span class="skill-placeholder" aria-hidden="true"><i class="fa fa-mobile"></i></span>Power Apps
-              </div>
-              <div class="col s4 m2">
-                <span class="skill-placeholder" aria-hidden="true"><i class="fa fa-cogs"></i></span>Power Automate
-              </div>
-              <div class="col s4 m2">
-                <span class="skill-placeholder" aria-hidden="true"><i class="fa fa-share-alt"></i></span>SharePoint
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/skills/azure-original.svg" class="responsive-img skill-icon" width="72"
-                  height="72" />Azure
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/skills/git-original.svg" class="responsive-img skill-icon" width="72"
-                  height="72" />Git
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/skills/githubactions-original.svg" class="responsive-img skill-icon"
-                  width="72" height="72" />GitHub Actions
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- ML / data -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">ML / Data</h4>
-            <div class="row text-center">
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/skills/pytorch-original.svg" class="responsive-img skill-icon" width="72"
-                  height="72" />PyTorch
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/skills/numpy-original.svg" class="responsive-img skill-icon" width="72"
-                  height="72" />NumPy
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/skills/pandas-original.svg" class="responsive-img skill-icon" width="72"
-                  height="72" />Pandas
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/skills/scikitlearn-original.svg" class="responsive-img skill-icon"
-                  width="72" height="72" />scikit-learn
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Sixth Section: Education -->
-    <section id="education" class="section scrollspy">
-      <h3 class="page-title white-text teal">Education</h3>
-      <div class="container">
-        <div class="row">
-          <div class="col s12 m6 l6">
-            <div class="card">
-              <div class="card-content">
-                <p>
-                  <span class="card-title"><a href="https://www.ece.utoronto.ca/" target="_blank" rel="noopener"
-                      class="teal-text hoverline">University of Toronto</a></span>
-                </p>
-                <p class="brown-text">Toronto, Canada</p>
-                <p>
-                  <b>Degree: </b>Bachelor of Applied Science in Computer Engineering (BASc)
-                </p>
-                <p>
-                  <b>Years: </b>2021 &ndash; 2026 (includes PEY co-op year)
-                </p>
-                <p>
-                  <b>Relevant Coursework:</b>
-                </p>
-                <ul>
-                  <li>Computer Architecture</li>
-                  <li>Operating Systems</li>
-                  <li>Algorithms and Data Structures</li>
-                  <li>Software Engineering</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Seventh Section: Contact -->
-    <section id="contact" class="section scrollspy full-height">
-      <h3 class="page-title white-text teal">Contact</h3>
-      <div class="container">
-        <p>
-          <a aria-label="Email Matthew" href="mailto:matthew.grech21@gmail.com" data-position="top"
-            data-tooltip="Email Matthew" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-envelope"></i></a><a href="mailto:matthew.grech21@gmail.com"
-            class="hoverline">matthew.grech21@gmail.com</a>
-        </p>
-        <p>
-          <a aria-label="View Matthew on GitHub" href="https://github.com/MEGmax" target="_blank" rel="noopener"
-            data-position="top" data-tooltip="View Matthew on GitHub"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-github"></i></a><a href="https://github.com/MEGmax" class="hoverline" target="_blank"
-            rel="noopener">github.com/MEGmax</a>
-        </p>
-        <p>
-          <a aria-label="View Matthew on LinkedIn" href="https://www.linkedin.com/in/mattgrech0" target="_blank"
-            rel="noopener" data-position="top" data-tooltip="View Matthew on LinkedIn"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-linkedin"></i></a><a href="https://www.linkedin.com/in/mattgrech0" class="hoverline"
-            target="_blank" rel="noopener">linkedin.com/in/mattgrech0</a>
-        </p>
-        <p>
-          <span class="btn-floating btn-large blue-grey contact-icon" aria-hidden="true"><i
-              class="fa fa-map-marker"></i></span><span class="contact-text">Toronto, Canada</span>
-        </p>
-      </div>
-    </section>
-
-    <!-- Recent Projects: filled at runtime from the GitHub API (public, non-fork repos with a description,
-         most recently pushed first). Add a description to a repo on GitHub to make it show up here. -->
-    <section id="recent-projects" class="section scrollspy">
-      <h3 class="page-title white-text teal">Recent Projects</h3>
-      <div class="container">
-        <div id="project-list" class="row">
-          <noscript>
-            <div class="col s12">
-              <p>See my latest work on <a href="https://github.com/MEGmax">github.com/MEGmax</a>.</p>
-            </div>
-          </noscript>
-        </div>
-        <div class="center-align" style="margin-top:20px;">
-          <button id="load-more" class="btn waves-effect waves-light teal" style="display: none;">Load More</button>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- typed.js -->
-  <script src="/assets/vendor/typed.js/typed.min.js"></script>
-  <script type="text/javascript">
-    var typed = new Typed('.typing', {
-      strings: ["Full-Stack Developer", "AI Enthusiast", "Software Engineer", "Problem Solver"],
-      loop: true,
-      typeSpeed: 80,
-      backSpeed: 40
-    });
-  </script>
-
-  <!-- jQuery-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
-  <!-- Materialize - Compiled and minified JavaScript-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
-  <script>
-    // Materialize - Initializers
-    $(document).ready(function () {
-      $(".scrollspy").scrollSpy()
-      // Initialize collapse button
-      $(".button-collapse").sideNav({
-        menuWidth: 190, // Default is 240
-        edge: "left", // Choose the horizontal origin
-        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-      })
-    })
-  </script>
-  <script>
-    // Recent Projects: most recently pushed public repos from github.com/MEGmax.
-    (function () {
-      var GITHUB_USER = "MEGmax";
-      var PAGE_SIZE = 3;
-      var list = document.getElementById("project-list");
-      var button = document.getElementById("load-more");
-      var repos = [];
-      var shown = 0;
-
-      function el(tag, className, text) {
-        var node = document.createElement(tag);
-        if (className) node.className = className;
-        if (text) node.textContent = text;
-        return node;
-      }
-
-      function link(href, text) {
-        var a = el("a", "", text);
-        a.href = href;
-        a.target = "_blank";
-        a.rel = "noopener";
-        return a;
-      }
-
-      function card(repo) {
-        var col = el("div", "col s12 m6 l4");
-        var cardEl = el("div", "card small");
-        var content = el("div", "card-content");
-        content.appendChild(el("span", "card-title teal-text repo-title", repo.name));
-        content.appendChild(el("p", "", repo.description));
-        var updated = new Date(repo.pushed_at).toLocaleDateString("en-CA", { month: "short", year: "numeric" });
-        content.appendChild(el("p", "repo-meta", (repo.language ? repo.language + " · " : "") + "Updated " + updated));
-        var action = el("div", "card-action");
-        action.appendChild(link(repo.html_url, "View Repo"));
-        var live = repo.homepage || (repo.has_pages ? "https://" + GITHUB_USER.toLowerCase() + ".github.io/" + repo.name + "/" : "");
-        if (live) action.appendChild(link(live, "Live Site"));
-        cardEl.appendChild(content);
-        cardEl.appendChild(action);
-        col.appendChild(cardEl);
-        return col;
-      }
-
-      function showMore() {
-        repos.slice(shown, shown + PAGE_SIZE).forEach(function (repo) { list.appendChild(card(repo)); });
-        shown = Math.min(shown + PAGE_SIZE, repos.length);
-        // Only offer "Load More" while there is something left to load.
-        button.style.display = shown < repos.length ? "inline-block" : "none";
-      }
-
-      function showFallback() {
-        list.innerHTML = "";
-        var col = el("div", "col s12");
-        var p = el("p", "", "See my latest work on ");
-        p.appendChild(link("https://github.com/" + GITHUB_USER, "github.com/" + GITHUB_USER));
-        p.appendChild(document.createTextNode("."));
-        col.appendChild(p);
-        list.appendChild(col);
-        button.style.display = "none";
-      }
-
-      button.addEventListener("click", showMore);
-
-      fetch("https://api.github.com/users/" + GITHUB_USER + "/repos?sort=pushed&per_page=100", {
-        headers: { Accept: "application/vnd.github+json" }
-      })
-        .then(function (res) { if (!res.ok) throw new Error("GitHub API " + res.status); return res.json(); })
-        .then(function (data) {
-          repos = data.filter(function (r) {
-            return !r.fork && !r.archived && !r.private && r.description &&
-              r.name.toLowerCase() !== (GITHUB_USER + ".github.io").toLowerCase();
-          }).sort(function (a, b) { return new Date(b.pushed_at) - new Date(a.pushed_at); });
-          if (repos.length) showMore(); else showFallback();
-        })
-        .catch(showFallback);
-    })();
-  </script>
-
-</body>
-
+      <!-- Checkpoint 1 scaffolding: empty sections so the nav, scroll progress and per-section
+           background moods can be tested. Real content (copied from the old index.html) lands in step 3. -->
+      <section id="about" class="section section-stub" tabindex="-1" aria-labelledby="about-title">
+        <div class="container"><p class="section-index">01</p><h2 id="about-title">About</h2></div>
+      </section>
+      <section id="experience" class="section section-stub" tabindex="-1" aria-labelledby="experience-title">
+        <div class="container"><p class="section-index">02</p><h2 id="experience-title">Experience</h2></div>
+      </section>
+      <section id="projects" class="section section-stub" tabindex="-1" aria-labelledby="projects-title">
+        <div class="container"><p class="section-index">03</p><h2 id="projects-title">Projects</h2></div>
+      </section>
+      <section id="skills" class="section section-stub" tabindex="-1" aria-labelledby="skills-title">
+        <div class="container"><p class="section-index">04</p><h2 id="skills-title">Skills</h2></div>
+      </section>
+      <section id="education" class="section section-stub" tabindex="-1" aria-labelledby="education-title">
+        <div class="container"><p class="section-index">05</p><h2 id="education-title">Education</h2></div>
+      </section>
+      <section id="recent-projects" class="section section-stub" tabindex="-1" aria-labelledby="recent-title">
+        <div class="container"><p class="section-index">06</p><h2 id="recent-title">Recent Projects</h2></div>
+      </section>
+      <section id="contact" class="section section-stub" tabindex="-1" aria-labelledby="contact-title">
+        <div class="container"><p class="section-index">07</p><h2 id="contact-title">Contact</h2></div>
+      </section>
+    </main>
+  </body>
 </html>
