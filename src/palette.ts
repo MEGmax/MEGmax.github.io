@@ -38,7 +38,6 @@ export const moods: Mood[] = [
   { id: 'projects', shift: 0.3, intensity: 0.9, speed: 0.9, warp: 4.4, particles: 0.85, blobs: 0.8 },
   { id: 'skills', shift: 0.45, intensity: 0.75, speed: 0.7, warp: 3.8, particles: 0.7, blobs: 0.5 },
   { id: 'education', shift: 0.2, intensity: 0.65, speed: 0.55, warp: 3.0, particles: 0.55, blobs: 0.4 },
-  { id: 'recent-projects', shift: 0.6, intensity: 0.7, speed: 0.6, warp: 3.4, particles: 0.6, blobs: 0.5 },
   { id: 'contact', shift: 0.1, intensity: 0.45, speed: 0.22, warp: 2.4, particles: 0.3, blobs: 0.25 },
 ];
 

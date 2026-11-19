@@ -64,7 +64,9 @@
 
     <header class="nav" data-nav>
       <nav class="nav-pill glass" aria-label="Primary">
-        <a class="nav-brand" href="#intro" aria-label="Matthew Grech, back to top">MG</a>
+        <a class="nav-brand" href="#intro" aria-label="Matthew Grech, back to top"
+          ><img src="/assets/img/avatar.jpg" alt="" width="38" height="38"
+        /></a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
           <span class="nav-toggle-label">Menu</span>
           <span class="nav-toggle-icon" aria-hidden="true"><i></i><i></i></span>
@@ -75,7 +77,6 @@
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#education">Education</a></li>
-          <li><a href="#recent-projects">Recent</a></li>
           <li><a href="#contact">Contact</a></li>
           <li class="nav-links-resume">
             <!-- TODO: add your own Google Drive copy of the resume here if you want one
@@ -140,29 +141,450 @@
         </a>
       </section>
 
-      <!-- Checkpoint 1 scaffolding: empty sections so the nav, scroll progress and per-section
-           background moods can be tested. Real content (copied from the old index.html) lands in step 3. -->
-      <section id="about" class="section section-stub" tabindex="-1" aria-labelledby="about-title">
-        <div class="container"><p class="section-index">01</p><h2 id="about-title">About</h2></div>
+      <!-- ================================================================ About -->
+      <section id="about" class="section" tabindex="-1" aria-labelledby="about-title">
+        <div class="container">
+          <header class="section-head">
+            <p class="section-index">01</p>
+            <h2 id="about-title">About</h2>
+          </header>
+          <div class="about-grid">
+            <div class="about-copy">
+              <p class="lead">
+                I&rsquo;m a Software Engineer and Computer Engineering student at the University of Toronto
+                (BASc&nbsp;2026), based in Toronto, Canada.
+              </p>
+              <p>
+                My work spans full-stack web development, DevOps pipelines, and deep learning. I enjoy building
+                scalable applications, solving complex algorithmic challenges, and collaborating in teams to deliver
+                impactful solutions.
+              </p>
+            </div>
+            <!-- Keep this list in sync with the Skills section below. -->
+            <dl class="about-facts glass">
+              <div>
+                <dt>Languages</dt>
+                <dd>Python, C/C++, TypeScript/JavaScript, C#, Java, SQL (T-SQL, PostgreSQL), Ruby</dd>
+              </div>
+              <div>
+                <dt>Frameworks</dt>
+                <dd>React, Next.js, Node.js, ASP.NET / .NET, Ruby on Rails</dd>
+              </div>
+              <div>
+                <dt>Platforms &amp; tools</dt>
+                <dd>Power Apps, Power Automate, SharePoint, Azure, Git, GitHub Actions</dd>
+              </div>
+              <div>
+                <dt>ML / data</dt>
+                <dd>PyTorch, NumPy, Pandas, scikit-learn</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
       </section>
-      <section id="experience" class="section section-stub" tabindex="-1" aria-labelledby="experience-title">
-        <div class="container"><p class="section-index">02</p><h2 id="experience-title">Experience</h2></div>
+
+      <!-- ================================================================ Experience -->
+      <section id="experience" class="section" tabindex="-1" aria-labelledby="experience-title">
+        <div class="container">
+          <header class="section-head">
+            <p class="section-index">02</p>
+            <h2 id="experience-title">Experience</h2>
+          </header>
+          <!-- Company marks are text monograms. TODO: drop in real logos if you want them. -->
+          <ol class="timeline">
+            <li class="exp glass">
+              <div class="exp-mark" aria-hidden="true">CIBC</div>
+              <div class="exp-body">
+                <div class="exp-head">
+                  <h3>
+                    <a href="https://www.cibccm.com/" target="_blank" rel="noopener">CIBC Capital Markets</a>
+                  </h3>
+                  <!-- TODO: add CIBC start date, e.g. "<Month YYYY> – Present" -->
+                  <p class="exp-when"><span class="exp-now">Current</span> · Toronto, Canada</p>
+                </div>
+                <p class="exp-role">Analyst <span>· Client Data and Process Automation</span></p>
+                <ul>
+                  <li>
+                    Created an attestation platform with delegation-aware Power Fx logic and audit-trail permission
+                    controls, automating compliance sign-off for 100+ stakeholders.
+                  </li>
+                  <li>
+                    Automated tracking of 20,000+ annual client communications by engineering scalable Power Automate
+                    workflows, reducing manual processing overhead.
+                  </li>
+                </ul>
+                <ul class="tags" aria-label="Stack">
+                  <li>Power Apps (Canvas)</li>
+                  <li>Power Automate</li>
+                  <li>SharePoint</li>
+                  <li>Power Fx</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="exp glass">
+              <div class="exp-mark" aria-hidden="true">NPX</div>
+              <div class="exp-body">
+                <div class="exp-head">
+                  <h3>
+                    <a href="https://www.npxinnovation.ca/" target="_blank" rel="noopener">Nuclear Promise X (NPX)</a>
+                  </h3>
+                  <p class="exp-when">May 2024 &ndash; May 2025</p>
+                </div>
+                <p class="exp-role">Software Engineering Intern <span>· PEY co-op</span></p>
+                <ul>
+                  <li>
+                    Built a React + Next.js QA web app projected to save $200K over 4 years, deployed to Azure
+                    Container Apps.
+                  </li>
+                  <li>Created an invoice manager automating 80% of the invoicing process.</li>
+                  <li>Improved routing logic in the ECHO tool, boosting efficiency by 6%.</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="exp glass">
+              <div class="exp-mark" aria-hidden="true">R</div>
+              <div class="exp-body">
+                <div class="exp-head">
+                  <!-- TODO: link Ramuri Science Inc.'s website if it has one (ramuri.com serves a blank page). -->
+                  <h3>Ramuri Science Inc.</h3>
+                  <p class="exp-when">May 2023 &ndash; May 2024</p>
+                </div>
+                <p class="exp-role">Director of Engineering</p>
+                <ul>
+                  <li>Led an early-stage startup engineering team, securing Microsoft + UofT funding.</li>
+                  <li>Developed a CNN-based product recommendation model, boosting users by 82%.</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="exp glass">
+              <div class="exp-mark" aria-hidden="true">Q</div>
+              <div class="exp-body">
+                <div class="exp-head">
+                  <!-- questica.com now redirects to its parent company, Euna Solutions. -->
+                  <h3><a href="https://www.questica.com/" target="_blank" rel="noopener">Questica Inc.</a></h3>
+                  <p class="exp-when">May 2022 &ndash; Aug 2022</p>
+                </div>
+                <p class="exp-role">Software Engineering Intern</p>
+                <ul>
+                  <li>Built an integration dashboard with .NET 6 + C#, reducing data manipulation times by 50%.</li>
+                  <li>Optimized reporting with T-SQL scripts, cutting build times by 40%.</li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </div>
       </section>
-      <section id="projects" class="section section-stub" tabindex="-1" aria-labelledby="projects-title">
-        <div class="container"><p class="section-index">03</p><h2 id="projects-title">Projects</h2></div>
+
+      <!-- ================================================================ Projects -->
+      <section id="projects" class="section" tabindex="-1" aria-labelledby="projects-title">
+        <div class="container">
+          <header class="section-head">
+            <p class="section-index">03</p>
+            <h2 id="projects-title">Projects</h2>
+          </header>
+          <div class="project-grid">
+            <article class="project project-featured glass">
+              <img
+                class="project-media"
+                src="/assets/img/project-capstone.jpg"
+                alt="Path-loss map predicted by the model for a simulated city block, transmitter at the centre"
+                loading="lazy"
+                width="500"
+                height="500"
+              />
+              <div class="project-body">
+                <p class="project-kicker">Capstone · 2025&ndash;26</p>
+                <h3>Real-Time Radio Coverage Prediction</h3>
+                <p>
+                  A neural-network tool that predicts radio-wave coverage (path-loss maps) across urban areas in real
+                  time, as a fast alternative to ray-tracing simulation for planning where to place outdoor wireless
+                  transmitters.
+                </p>
+                <ul>
+                  <li>
+                    Built a data pipeline that generates 3D city scenes in Blender and ray-traces ground-truth path-loss
+                    maps with Sionna.
+                  </li>
+                  <li>
+                    Trained a diffusion model conditioned on building elevation and electrical distance to the
+                    transmitter.
+                  </li>
+                  <li>Predicts a coverage map in about 75&nbsp;ms, versus 30+ minutes per map with ray tracing.</li>
+                  <li>Four-person team project.</li>
+                </ul>
+                <ul class="tags" aria-label="Tools">
+                  <li>Python</li>
+                  <li>PyTorch</li>
+                  <li>Sionna</li>
+                  <li>Blender</li>
+                  <li>NumPy</li>
+                </ul>
+                <p class="project-links">
+                  <a
+                    class="link-arrow"
+                    href="https://github.com/MEGmax/nn-propagation-model-for-urban-areas"
+                    target="_blank"
+                    rel="noopener"
+                    >Source<span class="visually-hidden"> for Real-Time Radio Coverage Prediction</span></a
+                  >
+                </p>
+              </div>
+            </article>
+
+            <article class="project glass">
+              <img
+                class="project-media"
+                src="/assets/img/project-kart-league.jpg"
+                alt="Screenshot of the Kart Night League website"
+                loading="lazy"
+                width="1280"
+                height="800"
+              />
+              <div class="project-body">
+                <h3>Mario Kart Cup Nights</h3>
+                <p>Website for organizing Mario Kart cup nights.</p>
+                <ul>
+                  <li>Admins schedule cup nights; players RSVP and can opt in to email invites.</li>
+                  <li>Tracks race results and season standings.</li>
+                </ul>
+                <ul class="tags" aria-label="Tools">
+                  <li>React</li>
+                  <li>MUI</li>
+                  <li>Vite</li>
+                  <li>Supabase</li>
+                  <li>GitHub Actions</li>
+                  <li>GitHub Pages</li>
+                </ul>
+                <p class="project-links">
+                  <a class="link-arrow" href="https://megmax.github.io/kart-league/" target="_blank" rel="noopener"
+                    >Live site<span class="visually-hidden"> for Mario Kart Cup Nights</span></a
+                  >
+                  <a class="link-arrow" href="https://github.com/MEGmax/kart-league" target="_blank" rel="noopener"
+                    >Source<span class="visually-hidden"> for Mario Kart Cup Nights</span></a
+                  >
+                </p>
+              </div>
+            </article>
+
+            <article class="project glass">
+              <!-- TODO: replace the generated tile with a real screenshot -->
+              <div class="project-media project-tile" aria-hidden="true">Rails</div>
+              <div class="project-body">
+                <h3>Credit Card Chooser</h3>
+                <p>Rails backend for a Canadian credit card recommender.</p>
+                <ul>
+                  <li>Users upload their spending.</li>
+                  <li>Transactions are categorized.</li>
+                  <li>Cards are recommended based on the user&rsquo;s spending profile.</li>
+                </ul>
+                <ul class="tags" aria-label="Tools">
+                  <li>Ruby on Rails</li>
+                  <li>SQLite</li>
+                </ul>
+                <!-- TODO: the matching repo is private, so there is no source link. -->
+              </div>
+            </article>
+
+            <article class="project glass">
+              <!-- TODO: replace the generated tile with a real screenshot (e.g. an equity curve) -->
+              <div class="project-media project-tile" aria-hidden="true">VWAP · RSI</div>
+              <div class="project-body">
+                <h3>VWAP + RSI Backtest</h3>
+                <p>Python backtest of an intraday mean-reversion trading strategy using VWAP and RSI signals.</p>
+                <ul class="tags" aria-label="Tools">
+                  <li>Python</li>
+                </ul>
+                <!-- TODO: no matching repo found on github.com/MEGmax. Add the repo link once it exists. -->
+              </div>
+            </article>
+
+            <article class="project glass">
+              <!-- TODO: replace the generated tile with a real screenshot -->
+              <div class="project-media project-tile" aria-hidden="true">A*</div>
+              <div class="project-body">
+                <h3>Graphical Information System</h3>
+                <p>C++ Google Maps-style mapping app with Dijkstra and A* path-finding.</p>
+                <ul>
+                  <!-- VERIFY: ranking claim carried over from the old site. -->
+                  <li>Ranked 2nd of 100+ teams in a path-finding efficiency challenge.</li>
+                </ul>
+                <ul class="tags" aria-label="Tools">
+                  <li>C++</li>
+                </ul>
+                <!-- TODO: the matching repo is private, so there is no source link. -->
+              </div>
+            </article>
+          </div>
+        </div>
       </section>
-      <section id="skills" class="section section-stub" tabindex="-1" aria-labelledby="skills-title">
-        <div class="container"><p class="section-index">04</p><h2 id="skills-title">Skills</h2></div>
+
+      <!-- ================================================================ Skills -->
+      <!-- Keep in sync with the list in About. Logos: Devicon (MIT), self-hosted in /assets/img/skills/.
+           Power Platform items use text monograms. -->
+      <section id="skills" class="section" tabindex="-1" aria-labelledby="skills-title">
+        <div class="container">
+          <header class="section-head">
+            <p class="section-index">04</p>
+            <h2 id="skills-title">Skills</h2>
+          </header>
+          <div class="skill-groups">
+            <div class="skill-group glass">
+              <h3>Languages</h3>
+              <ul class="skills">
+                <li><img src="/assets/img/skills/python-original.svg" alt="" width="40" height="40" />Python</li>
+                <li><img src="/assets/img/skills/cplusplus-original.svg" alt="" width="40" height="40" />C/C++</li>
+                <li>
+                  <img src="/assets/img/skills/typescript-original.svg" alt="" width="40" height="40" />TypeScript /
+                  JavaScript
+                </li>
+                <li><img src="/assets/img/skills/csharp-original.svg" alt="" width="40" height="40" />C#</li>
+                <li><img src="/assets/img/skills/java-original.svg" alt="" width="40" height="40" />Java</li>
+                <li>
+                  <img src="/assets/img/skills/postgresql-original.svg" alt="" width="40" height="40" />SQL (T-SQL,
+                  PostgreSQL)
+                </li>
+                <li><img src="/assets/img/skills/ruby-original.svg" alt="" width="40" height="40" />Ruby</li>
+              </ul>
+            </div>
+            <div class="skill-group glass">
+              <h3>Frameworks</h3>
+              <ul class="skills">
+                <li><img src="/assets/img/skills/react-original.svg" alt="" width="40" height="40" />React</li>
+                <li>
+                  <img class="skill-invert" src="/assets/img/skills/nextjs-original.svg" alt="" width="40" height="40" />Next.js
+                </li>
+                <li><img src="/assets/img/skills/nodejs-original.svg" alt="" width="40" height="40" />Node.js</li>
+                <li><img src="/assets/img/skills/dot-net-original.svg" alt="" width="40" height="40" />ASP.NET / .NET</li>
+                <li><img src="/assets/img/skills/rails-plain.svg" alt="" width="40" height="40" />Ruby on Rails</li>
+              </ul>
+            </div>
+            <div class="skill-group glass">
+              <h3>Platforms &amp; Tools</h3>
+              <ul class="skills">
+                <li><span class="skill-mono" aria-hidden="true">PA</span>Power Apps</li>
+                <li><span class="skill-mono" aria-hidden="true">PAu</span>Power Automate</li>
+                <li><span class="skill-mono" aria-hidden="true">SP</span>SharePoint</li>
+                <li><img src="/assets/img/skills/azure-original.svg" alt="" width="40" height="40" />Azure</li>
+                <li><img src="/assets/img/skills/git-original.svg" alt="" width="40" height="40" />Git</li>
+                <li>
+                  <img src="/assets/img/skills/githubactions-original.svg" alt="" width="40" height="40" />GitHub Actions
+                </li>
+              </ul>
+            </div>
+            <div class="skill-group glass">
+              <h3>ML / Data</h3>
+              <ul class="skills">
+                <li><img src="/assets/img/skills/pytorch-original.svg" alt="" width="40" height="40" />PyTorch</li>
+                <li><img src="/assets/img/skills/numpy-original.svg" alt="" width="40" height="40" />NumPy</li>
+                <li><img src="/assets/img/skills/pandas-original.svg" alt="" width="40" height="40" />Pandas</li>
+                <li>
+                  <img src="/assets/img/skills/scikitlearn-original.svg" alt="" width="40" height="40" />scikit-learn
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
-      <section id="education" class="section section-stub" tabindex="-1" aria-labelledby="education-title">
-        <div class="container"><p class="section-index">05</p><h2 id="education-title">Education</h2></div>
+
+      <!-- ================================================================ Education -->
+      <section id="education" class="section" tabindex="-1" aria-labelledby="education-title">
+        <div class="container">
+          <header class="section-head">
+            <p class="section-index">05</p>
+            <h2 id="education-title">Education</h2>
+          </header>
+          <article class="edu glass">
+            <div class="edu-main">
+              <img class="edu-crest" src="/assets/img/uoft-crest.png" alt="University of Toronto crest" width="112" height="186" />
+              <h3>
+                <a href="https://www.ece.utoronto.ca/" target="_blank" rel="noopener">University of Toronto</a>
+              </h3>
+              <p class="edu-degree">Bachelor of Applied Science in Computer Engineering (BASc)</p>
+              <p class="edu-meta">2021 &ndash; 2026 · includes PEY co-op year · Toronto, Canada</p>
+            </div>
+            <div class="edu-courses">
+              <h4>Relevant coursework</h4>
+              <ul class="tags">
+                <li>Computer Architecture</li>
+                <li>Operating Systems</li>
+                <li>Algorithms and Data Structures</li>
+                <li>Software Engineering</li>
+              </ul>
+            </div>
+          </article>
+        </div>
       </section>
-      <section id="recent-projects" class="section section-stub" tabindex="-1" aria-labelledby="recent-title">
-        <div class="container"><p class="section-index">06</p><h2 id="recent-title">Recent Projects</h2></div>
-      </section>
-      <section id="contact" class="section section-stub" tabindex="-1" aria-labelledby="contact-title">
-        <div class="container"><p class="section-index">07</p><h2 id="contact-title">Contact</h2></div>
+
+      <!-- ================================================================ Contact -->
+      <section id="contact" class="section section-contact" tabindex="-1" aria-labelledby="contact-title">
+        <div class="container">
+          <header class="section-head">
+            <p class="section-index">06</p>
+            <h2 id="contact-title">Contact</h2>
+          </header>
+          <p class="contact-lead">The fastest way to reach me is email.</p>
+          <a class="contact-email" href="mailto:matthew.grech21@gmail.com">matthew.grech21@gmail.com</a>
+          <ul class="contact-links">
+            <li>
+              <a class="btn btn-glass" href="https://www.linkedin.com/in/mattgrech0" target="_blank" rel="noopener">
+                <svg class="icon" viewBox="0 0 128 128" aria-hidden="true" focusable="false">
+                  <path
+                    fill="currentColor"
+                    d="M116 3H12a8.91 8.91 0 00-9 8.8v104.42a8.91 8.91 0 009 8.78h104a8.93 8.93 0 009-8.81V11.77A8.93 8.93 0 00116 3zM39.17 107H21.06V48.73h18.11zm-9-66.21a10.5 10.5 0 1110.49-10.5 10.5 10.5 0 01-10.54 10.48zM107 107H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53V48.73h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75z"
+                  />
+                </svg>
+                <span>linkedin.com/in/mattgrech0</span>
+              </a>
+            </li>
+            <li>
+              <a class="btn btn-glass" href="https://github.com/MEGmax" target="_blank" rel="noopener">
+                <svg class="icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                  <path
+                    fill="currentColor"
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+                  />
+                </svg>
+                <span>github.com/MEGmax</span>
+              </a>
+            </li>
+            <li>
+              <a class="btn btn-glass" href="/assets/resume/Matthew_Grech_Resume.pdf" target="_blank" rel="noopener">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8zM14 3v5h5M9 13h6M9 17h6"
+                  />
+                </svg>
+                <span>Resume (PDF)</span>
+              </a>
+            </li>
+          </ul>
+          <p class="contact-place">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 21s-7-6.1-7-11.5a7 7 0 0114 0C19 14.9 12 21 12 21zM12 12.25a2.5 2.5 0 100-5 2.5 2.5 0 000 5z"
+              />
+            </svg>
+            Toronto, Canada
+          </p>
+        </div>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span data-year>2026</span> Matthew Grech</p>
+    </footer>
   </body>
 </html>

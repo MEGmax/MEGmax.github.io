@@ -7,6 +7,9 @@ const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
 const scroller = initSmoothScroll(reduceMotion.matches);
 initNav(scroller);
 
+const year = document.querySelector('[data-year]');
+if (year) year.textContent = String(new Date().getFullYear());
+
 // ---- Background scene ------------------------------------------------------
 // The hero is plain HTML/CSS and paints immediately. Three.js and the shaders
 // are a separate chunk, fetched once the page has loaded and the main thread
