@@ -18,8 +18,7 @@ All credit for the original design and structure goes to the creator. My contrib
 ✔️ Projects \
 ✔️ Skills \
 ✔️ Education\
-✔️ Contact Info\
-✔️ Resume
+✔️ Contact Info
 
 ## Features 📋
 ⚡️ Fully Responsive\
